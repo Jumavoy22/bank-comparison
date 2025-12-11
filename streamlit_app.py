@@ -64,10 +64,7 @@ def load_and_clean_data(uploaded_file):
         else:
             df['p2p_flag'] = False
         
-        # --- Default Cleaning Logic ---
-        # Basic cleaning
-        df.dropna(how="all", inplace=True)
-        df.drop_duplicates(inplace=True)
+      
         
         # Critical fields
         crit_cols = [col for col in ["transaction_code", "trans_date", "total_sum", "bank_name"] if col in df.columns]
