@@ -11,7 +11,8 @@
     streamlit run streamlit_app.py
     ```
 
-
+## Схема потока данных:
+vertolet.csv -> clean_data.py -> cleaned_vertolet.csv -> streamlit_app.py ->
 
 ---
 
